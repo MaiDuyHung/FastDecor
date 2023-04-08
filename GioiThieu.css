@@ -1,0 +1,283 @@
+#everythinginside{
+    display: flex;
+    position: relative;
+    margin: 0px 40px;
+
+}
+#layoutanimation{
+    width: 100%;
+    height: 150%;
+    background-color: rgb(45,45,50);
+    animation-name: intro;
+    position: absolute;
+    animation-duration: 0.5s;
+    z-index: 7;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes intro{
+    from {background-color:rgb(45,45,50); height:150%;}
+    30%{background-color: rgb(45,45,50); height: 145%}
+    to {background-color:rgb(45,45,50); height: 0%; }
+}
+#layoutanimation h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    animation-name: tieudeintro;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes tieudeintro{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+
+#khoangtrang{
+    margin-bottom: 50px;
+}
+.TinyYellow{
+    width: 7%;
+    border: 1px rgb(226, 183, 64) solid;
+    margin-bottom: 20px;
+}
+#Mucluc{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    border: 1px rgb(153, 153, 153) solid;
+    border-radius: 5px;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#StoryFastDecor{
+    width: 100%;
+    
+
+}
+#ContentStory{
+    width: 60%;
+    float: left;
+    padding: 30px 40px;
+
+}
+
+#titlesrtory{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#lineforStory{
+    width: 10%;
+    border: 1px rgb(226, 183, 64) solid;
+    margin-bottom: 20px;
+    margin: auto;
+}
+.Content{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    color: rgb(102,102,102);
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#ImgOverride{
+    width: 40%;
+    height: 450px;
+    position: relative;
+    float: left;
+    margin-bottom: 60px;
+}
+#imgOver1{
+    position: absolute;
+    width: 230px;
+    height: auto;
+    bottom: 30%;
+    left: 10%;
+    z-index: 1;
+}
+#imgOver2{
+    position: absolute;
+    width: 350px;
+    height: auto;
+    bottom: 0%;
+    z-index: 3;
+}
+#imgOver3{
+    position: absolute;
+    width: 230px;
+    height: auto;
+    right: 10%;
+    top: 20%;
+    z-index: 2;
+}
+
+#ALLMission{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: rgb(2, 45, 38);
+    margin-bottom: 50px;
+}
+#ImgMission{
+    width: 40%;
+    height: auto;
+    display: flex;
+}
+#LIM{
+    width: 50%;
+    height: auto;
+}
+#LIM img{
+    width: 100%;
+    height: 100%;
+}
+#RIM{
+    width: 50%;
+    height: auto;
+}
+.RIMpart{
+    width: 100%;
+    height: 32.90%;
+
+}
+#mission{
+    width: 60%;
+    height: auto;
+    clear: both;
+    padding: 40px;
+    color: rgb(226, 183, 64);
+}
+#mission h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#mission p{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    color: rgb(102,102,102);
+    font-weight: 700;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255)
+}
+#allreason{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#allreason h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#paraTeam{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    color: rgb(102, 102, 102);
+    font-weight: 700;
+    
+}
+#allreason{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+
+}
+#reason{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.reasoncard{
+    position: relative;
+
+}
+.reasoncard img{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.reasoncard p{
+    width: 90%;
+    height: auto;
+    background-color: rgb(2, 45, 38);
+    color: rgb(226, 183, 64);
+    margin: 70px 15px 20px 15px;
+    padding: 40px 25px 40px 25px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+#allTeam{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#allTeam h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#TeamList{
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+.Member{
+    width: 30%;
+    height: 550px;
+    float:left;
+    margin: 20px;
+    color: rgb(45,45,45);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Monserrat',sans-serif;
+    line-height: 25px;
+}
+.Member img{
+    width: 100%;
+    height: auto;
+}

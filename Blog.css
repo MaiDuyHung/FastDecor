@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+#ALLBLOG{
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    font-family: 'Monserrat',sans-serif;
+    display: flex;
+}
+#AllBlogPart{
+    width: 60%;
+    height:auto;
+    font-family: 'Monserrat',sans-serif;
+}
+.BlogPost{
+    width: 100%;
+    font-family: 'Monserrat',sans-serif;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    height: auto;
+    
+}
+.BlogPost h1{
+    font-family: 'Monserrat',sans-serif;
+    font-weight: 100;
+}
+.BlogPost p{
+    height: fit-content;
+    margin-bottom: 20px;
+}
+.learnmore{
+    padding: 10px 20px;
+    background-color: rgb(2,45,38);
+    text-decoration: none;
+    color: rgb(226,183,64);
+}
+.learnmore:hover{
+    background-color: rgb(226,183,64);
+    color: rgb(2,45,38);
+    transition: all 0.4s ease-in-out;
+}

@@ -1,0 +1,673 @@
+body{
+    font-family: "Lexend",sans-serif;
+    overflow: visible;
+}
+/*===========================FIXED BAR==============================*/
+#fixedbar{
+    width: 55px;
+    height: 335px;
+    position: absolute;
+    top: 50%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    right:0%;
+    transform: translate(0%,-50%);
+    position: fixed;
+    z-index: 5;
+   
+}
+#LHfixedbar{
+    width: 100%;
+    height: 145px;
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 95px;
+    
+}
+#rotate{
+    width: 20px;
+    height: 100%;
+    transform: rotate(90deg);
+    display: inline;
+}
+.iconFixedbar1{
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 4px;
+    display: block;
+}
+.iconFixedbar2{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 18px;
+}
+.iconFixedbar3{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(102, 102, 102);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display: block;
+}
+#bovienzalo{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 102, 102);
+    border-bottom-left-radius: 8px;
+}
+#bovienzalo img{
+    border-radius: 6px;
+    width: 60%;
+    height: 60%;
+}
+/*===========================SLIDER BACKGROUND=================================*/
+  
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  animation: textmove 0.8s ease-in-out 0.5s forwards;
+  opacity: 0;
+}
+@keyframes textmove{
+  from{ opacity: 0; bottom: 0%;}
+  to{opacity: 1; bottom: 25%;}
+}
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*=====================================GiuseArchit======================================*/
+#AllArtChit{
+    width:100%;
+    height: 555px;
+    background-image:linear-gradient(0deg,rgb(218, 218, 218), rgb(158, 158, 158));
+    margin-top: 20px;
+}
+#logoTitle{
+    display: flex;
+    margin-top: 40px;
+}
+#logoTitle h3{
+    font-size: 20px;
+    color: rgb(102,102,102);
+    
+}
+#grayline{
+    width: 160px;
+    height: 20px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(102,102,102);
+
+}
+
+#KhoiTren{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#ParaArchit{
+    width: 375px;
+    height: 475px;
+    margin-right: 30px;
+}
+#ParaArchit h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 34px;
+}
+#ParaArchit h2{
+    font-size: 25px;
+    font-weight: 400;
+    color:rgb(75, 75, 75);
+    margin-bottom: 20px;
+}
+#ParaArchit p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#buttonArt{
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px 10px 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(75, 75, 75);
+    line-height: 10px;
+}
+#buttonArt:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s ;
+}
+.buttonnew:mouseout{
+    transition-duration: 0.4s;
+    
+}
+#imgArtchit{
+    width: 470px;
+    height: 440px;
+
+}
+#bigImg{
+    margin-top: 30px;
+    width: 470px;
+    height: 300px;
+
+}
+#imgicon{
+    margin-top: 20px;
+    width: 100%;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.IconArchit{
+    width: 150px;
+    height: 110px;
+
+}
+.IconArchit img{
+    width: 80px;
+    height: 80px;
+    border-width: 2px;
+    border-radius: 50%;
+    border-color: rgb(223, 223, 223);
+    border-style: solid;
+}
+
+#paraQuote{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+}
+
+/*==========================FORM DANG KI============================*/
+#ALLInputIn4{
+    width: 100%;
+    height: 165px;
+    display: flex;
+    float:left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#tieudeIn4{
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    background-color: rgb(148,149,153);
+    color: rgb(240, 240, 240);
+    line-height: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cangiuatieude{
+    width: 100%;
+    height: 50%;
+
+}
+#cangiuatieude h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tieudeIn4 h2{
+    font-size: 13px;
+}
+#NhapIn4{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(190,190,195);
+    display: flex;
+    float: left;
+}
+#InputLeft{
+    width: 50%;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.inputform{
+    width: 100%;
+    border: none;
+    display: flex;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-right-width: 1px ;
+    border-right-color: rgb(194, 194, 194);
+    border-right-style: solid;
+}
+.inputform input{
+    width: 315px;
+    height: 35px;
+    border: none;
+}
+#note{
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 44%;
+    height: 100%;
+}
+
+#iconphu{
+    width: 35px;
+    height: auto;
+    padding: 5px 5px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-right-width: 1px ;
+    border-right-color: rgb(194, 194, 194);
+    border-right-style: solid;
+}
+#note input{
+    width: 90%;
+    height: 125px;
+    border: none;
+    
+}
+/*================================(PHONG CACH KIEN TRUC)================================*/
+#StyleArchit{
+    clear: both;
+    width: 100%;
+    height: 330px;
+    background-image: url(ImgTrangChu/Imgthietke.jpeg);
+    background-size: 100% 330px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#layoutstyle{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+#ListStyle{
+    width: 80%;
+    height: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Alloption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.option{
+    width: fit-content;
+    height:fit-content;
+    padding: 10px 18px 10px 18px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-style:solid;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin: 0px 10px 0px 10px;
+}
+.option:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s ;
+}
+
+#buttonStyle{
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px 10px 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    line-height: 10px;
+    margin: auto;
+}
+#buttonStyle:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s ;
+}
+#ListStyle h3{
+    font-family: 'Lora',serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*================================THIET KE NOI THAT===================================*/
+#AllThietkeNoiThat{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#AllThietkeNoiThat h1{
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+#AllThietkeNoiThat p{
+    margin-bottom: 20px;
+}
+#ListThietke{
+    width: 100%;
+    height: auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.ThietKe{
+    width: fit-content;
+    height:fit-content;
+    padding: 10px 18px 10px 18px;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    border-style:solid;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    margin: 0px 10px 0px 10px;
+}
+.ThietKe:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s ;
+}
+.RowImgDesign{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.ImgTKWraper{
+    width: 25%;
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+.ImgTKWraper h3{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 35%;
+    transform: translateY(-50%);
+    transform: scaleX(0);
+}
+.ImgTKWraper:hover .projectNo{
+    transform: scaleX(1);
+    transition: all 0.4s ease-in-out;
+}
+.ImgTKWraper img{
+    width: 100%;
+    height: 215px;
+}
+#AllDesign{
+    height: auto;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.listdoitac img{
+    width: 160px;
+    height: 110px;
+}
+#khuonbuttonDesign{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttonDesign{
+    padding: 15px 20px 15px 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    line-height: 10px;
+    margin-top: 20px;    
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+#buttonDesign:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
+    transition:all 0.4s ease-in-out;
+}
+/*================================SAN PHAM CAO CAP====================================*/
+#allSanPham{
+    width: 100%;
+    height: auto;
+    background-color: rgb(247, 247, 247);
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+#titleSanPham{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#titleSanPham h1{
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+}
+#SanPham{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px;
+    
+}
+.ZoomSP{
+    width: 25%;
+    float: left;
+    margin: 20px 0px;
+    padding: 0px 3px;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    
+}
+.ZoomSP img{
+    width: 100%;
+    display: block;
+    
+}
+.ZoomSP img:hover{
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.TenNT{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 90%;
+    transform: translateX(-1%);
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+.ZoomSP:hover .TenNT{
+    transition: all 0.4s ease-in-out;
+    top: 75%;
+    transform: translateX(-1%);
+    opacity: 1;
+}
+/*===============================ABOUT US======================================*/
+#aboutus{
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+#aboutus h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#aboutus p{
+    margin: auto;
+    width: 80%;
+    line-height: 20px;
+    padding: 10px 0 10px 0;
+    color: rgb(26, 26, 26);
+}
+#Khuonbutton{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+#buttonXanh{
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px 10px 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    line-height: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, +50%);
+    color: black;
+    text-decoration: none;
+}
+#buttonXanh:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.4s ;
+}
+/*===============================KHACH HANG===============================*/
+#alldoitac{
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat',sans-serif;
+}
+#alldoitac h1{
+    margin: 20px 20px;
+    font-size: 40px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+}
+.listdoitac{
+    margin: 5px 5px 5px 5px;
+
+}
+.listdoitac img{
+    width: 12%;
+    height: auto;
+}
+/*===============================THONG SO THANH TUU===============================*/
+#background{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgb(154, 15, 207), rgb(172, 53, 162));
+    color: rgb(255, 255, 255);
+}
+#allcount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#layout h1{
+    padding: 50px 0px 10px 0px;
+}
+.itemtt{
+    padding: 20px 30px 20px 30px;
+}
+.itemtt p{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.itemtt svg{
+    margin: 20px;
+
+}

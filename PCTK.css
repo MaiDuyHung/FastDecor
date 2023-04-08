@@ -1,0 +1,335 @@
+#AllPCTK{
+    display: flex;
+
+}
+#BackgroundPCTK{
+    width: 100%;
+    height: 468px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#chayngang{
+    width: 100%;
+    height: 468px;
+    background-color: rgb(45,45,50);
+    position: absolute;
+    z-index: 2;
+    animation: chayngang 0.5s ease-in 1.3s;
+    animation-fill-mode: forwards;
+    right: 0%;
+}
+@keyframes chayngang{
+    from {background-color:rgb(45,45,50); width: 100%}
+    40%{background-color: rgb(45,45,50); width: 95%}
+    to {background-color:rgb(45,45,50); width: 0%}
+}
+
+#xanhto{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(2,45,38);
+    position: relative;
+    z-index: 1;
+}
+#nhongang{
+    border-top: 1px rgb(2, 65, 38) solid;
+    width: 40%;
+    height: 15%;
+    background-color: rgb(2,45,38);
+    position: absolute;
+    z-index: 3;
+    left: 0%;
+}
+#nhodoc{
+    border-right: 1px rgb(2, 65, 38) solid;
+    width: 8%;
+    height: 468px;
+    background-color: rgb(2,45,38);
+    position: absolute;
+    z-index: 3;
+    left: 0%;
+}
+#nhodoc p{
+    width: 250px;
+    height: auto;
+    color: rgba(255,255,255,0.31);
+    font-size: 11px;
+    font-family: 'Monserrat',sans-serif;
+    font-weight: 500;
+    transform: rotate(-90deg);
+    letter-spacing: 4px;
+    position: relative;
+    top: 25%;
+    left: 0%;
+}
+#nhodoc img{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: 1px rgb(70, 70, 70) solid;
+}
+#BackmainPCTK{
+    width: 60%;
+    height: 468px;
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+}
+
+#titleIntro{
+    width: 60%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    left: 14%;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    letter-spacing: 3px;
+    animation: titlePCTK 0.9s ease 1.8s forwards;
+    font-family: "Oswald",sans-serif;
+}
+@keyframes titlePCTK{
+    from {top: 60%;opacity: 0;}
+    10%{top: 57%;opacity: 0.05;}
+    to {top: 40%;opacity: 1;}
+}
+.LargeYellow{
+    width: 80px;
+    height: 0;
+    border-bottom: 3px rgb(226, 183, 64) solid;
+    margin-bottom: 50px;
+}
+#yellowletter{
+    color: rgb(226, 183, 64);
+}
+
+
+#notice{
+    width: 60%;
+    height: 70px;
+    background-color: rgb(15, 53, 47);
+    position: absolute;
+    right: 0%;
+}
+#noticeanime{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(2,45,38);
+
+}
+#noticeanime p{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    letter-spacing: 2px;
+    animation: paranotice 0.7s ease 2s forwards;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    opacity: 0;
+    z-index: 3;
+}
+@keyframes paranotice{
+    from {top: 100%;opacity: 0;}
+    10%{top: 95%;opacity: 0.05;}
+    to {top: 50%;opacity: 1;transform: translate(0%,-50%);}
+}
+
+#boxYellow{
+    width: 20%;
+    height: 0%;
+    background-color: rgb(226, 183, 64);
+    animation: boxyellow 0.7s ease 1.8s forwards;
+    position: absolute;
+    bottom:0%;
+    z-index: 2;
+}
+@keyframes boxyellow{
+    from {background-color: rgb(226, 183, 64);height: 0%;}
+    10%{background-color: rgb(226, 183, 64);height: 10%}
+    to {background-color: rgb(226, 183, 64);height: 100%;}
+}
+#linescroll{
+    width: 25%;
+    height:0;
+    border-top: 1px rgb(226, 183, 64) solid;
+    position: absolute;
+    z-index: 1;
+    right: 10%;
+    top: 100%;
+    animation: linescroll 0.7s ease 1.8s forwards;
+    opacity: 0;
+}
+@keyframes linescroll{
+    from {top: 100%;opacity: 0;}
+    10%{top: 95%;opacity: 0.05;}
+    to {top: 50%;opacity: 1;}
+}
+/*============================END INTRO===============================*/
+/*============================ALL PCTK================================*/
+#AllPCTK{
+    margin-top: 80px;
+}
+#AllDetail{
+    width: 60%;
+    margin: 50px 10px 0px 40px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px; 
+    color: black;
+}
+#AllDetail h1{
+    line-height: 45px;
+}
+#AllDetail h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#AllDetail img{
+    margin-top: 20px;
+}
+.epilogue{
+    margin: 5px 0px 10px 0px;
+    text-align: center;
+}
+.Categorybox{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background-color: rgb(15, 53, 47);
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px 0px 50px 0px;
+}
+.Categorybox a{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 100;
+}
+.chuvang{
+    color: rgb(226, 183, 64);
+
+}
+.anh{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+#baodong a{
+    text-align: center;
+    font-size: 50px;
+}
+/*-------RATING--------*/
+#ratingPCTK{
+    display: flex;
+    color: rgb(226, 183, 64);
+    margin: 20px;
+    
+}
+#ratingPCTK li{
+    margin: 0 10px 0 10px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+
+}
+#ratingPCTK p{
+    color: rgb(80, 80, 80);
+    margin-left: 10px;
+}
+#ratingPCTK svg{
+    transform: translate(0%,+25%);
+}
+#foreword{
+    margin: 10px 0px 20px 0px;
+}
+
+/*----------LIEN HE + BAI VIET---------*/
+#sidebar{
+    width: 30%;
+    height: auto;
+    margin: 50px 10px 0px 20px;
+}
+#sidebar h1{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Montserrat',sans-serif;
+}
+#contactWrapper{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px 10px 10px;
+    background-color: rgb(219, 219, 219);
+    border: 1px rgb(201, 201, 201) solid;
+    margin: 20px 0px;
+}
+#contactWrapper li{
+    margin: 20px 0px 20px 0px;
+    line-height: 25px;
+}
+.contactpart{
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Montserrat',sans-serif;
+    
+}
+.linkcontact{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.linkcontact:hover{
+    color: rgb(226, 183, 64);
+    transition-duration: 0.3s;
+}
+#postWrapper{
+    width: 100%;
+    height: auto;
+    background-color: rgb(219, 219, 219);
+    border: 1px rgb(201, 201, 201) solid;
+    margin-top: 20px;
+}
+.postcard{
+    height: auto;
+    list-style: none;
+    display: flex;
+    padding: 20px 0px 20px 30px;
+}
+.titanddate{
+    width: 60%;
+    color: rgb(70, 70, 70);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.postcard img{
+    width: 27%;
+    height: auto;
+}
+.titanddate a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(70, 70, 70);
+}
+.titanddate a:hover{
+    color: rgb(226, 183, 64);
+    transition: all 0.2s ease;
+}
+.postcard p{
+    display: block;
+    font-size: 13px;
+}

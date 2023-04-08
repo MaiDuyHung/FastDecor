@@ -1,0 +1,407 @@
+#Backimgsp{
+    width: 100%;
+    height: 350px;
+    background-image: url(ImgSanPham/imgBackSanpham.JPG) ;
+    background-size: contain;
+}
+/*=======================SLIDER AND ANIMATION==========================*/
+h2 {
+  text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+/* Ẩn các slider */
+.mySlides {
+    display: none;
+}
+/* Định dạng nội dung Caption */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat',sans-serif;
+  animation: textmove 0.8s ease-in-out 0.5s forwards;
+  opacity: 0;
+}
+@keyframes textmove{
+  from{ opacity: 0; bottom: 0%;}
+  to{opacity: 1; bottom: 25%;}
+}
+/* định dạng các chấm chuyển đổi các slide */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* khi được hover, active đổi màu nền */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*=====================DANH MUC, SEARCH BAR, POLICY và LỜI GIỚI THIỆU==============================*/
+#ALLSP{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#AllUnderBack{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+}
+#Danhmucsanpham{
+    width: 16%;
+    height: 100%;
+    list-style: none;
+    background-color: rgb(231, 231, 231);
+}
+#Danhmucsanpham p{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(15, 53, 47);
+    font-size: 14px;
+    color: rgb(226, 183, 64);
+    box-sizing: border-box;
+}
+.OptionSP{
+    width: 100%;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+
+}
+.OptionSP:hover{
+    background-color: rgb(15, 53, 47);
+    color: rgb(226, 183, 64);
+    transition: all 0.2s ease;
+}
+#conlai{
+    width: 60%;
+    height: auto;
+    margin: 0px 10px 20px 10px;
+}
+#conlai img{
+    width: 90%;
+    height: auto;
+    margin-left: 45px;
+}
+#conlai input{
+    width: 85%;
+    height: 40px;
+    
+}
+#searchbutton{
+    width: 15%;
+    height: 40px;
+    background-color: rgb(2, 45, 38);
+    color: rgb(226, 183, 64);
+    padding: 10px 10px 11px 10px;
+    text-decoration: none;
+}
+#conlai p{
+    line-height: 25px;
+    margin-bottom: 20px;
+    
+}
+#listPolicy{
+    width: 100%;
+    list-style: none;
+    margin-left: 10px;
+    background-color: rgb(15, 53, 47);
+    color: rgb(226, 183, 64);
+    padding: 10px 20px;
+    text-align: center;
+}
+#rightsideSP{
+    width: 20%;
+    height: auto;
+    display: block;
+    list-style: none;
+}
+.policy{
+    width: 100%;
+    list-style: none;
+    margin: 18px 10px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px rgb(2, 45, 38) solid;
+}
+.policy:hover{
+    background-color: rgb(226, 183, 64);
+    color: rgb(15, 53, 47);
+    transform: all 0.3s ease-in;
+}
+#SearchBar{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+}
+#SearchBar input{
+    width: 50%;
+    height: auto;
+    padding: 10px 20px;
+}
+/*=================================LIST 1: CAC SAN PHAM BAN CHAY====================================*/
+.ListSP{
+    width: 100%;
+    height: auto;
+    
+}
+.sectionSP{
+    width: 100%;
+    height: auto;
+    background-color: rgb(15, 53, 47);
+    color: rgb(226, 183, 64);
+    padding: 10px 0px 10px 0px;
+    font-size: 25px;
+    text-align: center;
+    clear: both;
+}
+.groupSP{
+    clear: both;
+    list-style: none;
+}
+.product{
+    float: left;
+    width: 19%;
+    height: 50%;
+    margin: 10px 5px;
+    border: 1px rgb(209, 209, 209) solid;
+}
+.ImgWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 180px;                                    /*<---------- Cai nay thi buoc phai fix cứng chứ ko để đc %*/
+    border-bottom: 1px rgb(177, 177, 177) solid;
+    position: relative;
+    overflow: hidden;
+}
+.floatCaption{
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    bottom: 0%;
+    background-color: rgb(0, 0, 0,0.7);
+    color: #ffffff;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(+50%);
+}
+.product:hover .floatCaption{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+.ContentWrapper{
+    width: 100%;
+    height: 40%;
+}
+.ImgWrapper img{
+    width: 100%;
+    height: auto;
+}
+.product:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.product h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+
+}
+.product h6{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: line-through;
+    color: rgb(102,102,102);
+}
+.product p{
+    margin-top: 10px;
+    margin: 10px 0px 10px 10px;
+    margin-left: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+}
+.sotrangsp{
+    clear: both;
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+.listNumber{
+    width: 10px;
+    height: 5px;
+    padding: 5px 10px;
+    border: 1px rgb(2, 45, 38) solid;
+    color: rgb(2, 45, 38);
+    text-decoration: none;
+}
+.listNumber:hover{
+    background-color: rgb(15, 53, 47);
+    color:rgb(226, 183, 64);
+    transition-duration: 0.4s;
+}
+#Kichcau{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(222,222,222);
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#Kichcau p{
+    color: rgb(50,50,50);
+    width: 60%;
+}
+#formDangki{
+    width: 40%;
+    height: auto;
+}
+#formDangki input{
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    border: 1px rgb(168, 168, 168) solid;
+    border-radius: 3px;
+}
+#formDangki a{
+    color: rgb(226, 183, 64);
+    background-color: rgb(15, 53, 47);
+    text-decoration: none;
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+/*
+.Back{
+    width: 360px;
+    height: 240px;
+    background-image: url(ImgTrangChu/imgnews3.JPG);
+    background-size: 360px 240px;
+    position: relative;
+}
+.Back::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+
+}
+.Back:hover::after{
+    transform: scaleX(1);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition-duration: 0.5s;
+}
+
+#layout{
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0.5);
+    
+}
+#layout:hover{
+    transform: scaleX(1);
+    background-color: rgba(31, 31, 31, 0.7);
+    transition-duration: 0.5s;
+}
+#cangiuatieude{
+    margin-top: 50px;
+    text-align: center;
+}
+#titleSanPham{
+    font-weight: 500;
+    font-family: "Lexend",sans-serif;
+}
+
+#allsp{
+    width: 100%;
+    height:580px;
+    margin-bottom: 70pxv;
+}
+.Hangsp{
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cardsp{
+    width: 200px;
+    height: 275px;
+    box-shadow: 5px 5px 5px 5px  rgb(104, 104, 104,0.3);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Lenxend",sans-serif;
+
+}
+.cardsp img{
+    width: 180px;
+    height: 135px;
+}
+.linedot{
+    width: 90%;
+    height: 0px;
+    border-width: 1px;
+    border-color: rgb(102,102,102);
+    border-style: dashed;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.cangiua{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cardsp p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(102,102,102);
+}
+.cardsp h4{
+    margin-bottom: 10px;
+    color: rgb(12,111,189);
+}
+.cardsp h5{
+    font-size: 18px;
+    color: rgb(222, 0, 0);
+}*/
