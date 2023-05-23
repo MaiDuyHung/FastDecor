@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="Lienhe.css">
     <link rel="stylesheet" href="Dangnhap.css">
     <link rel="stylesheet" href="Dangki.css">
+
+    <script src="ValidateForm.js"></script>
+
 </head>
 <body>
     <div id="headLogin">
@@ -24,7 +27,7 @@
             <h1>Đăng kí</h1>
         </div>
         <div id="Help">
-            <a href="">Bạn cần giúp đỡ?</a>
+            <a href="http://127.0.0.1:5502/Help.html">Bạn cần giúp đỡ?</a>
         </div>
     </div>
     <div id="BodyLogin">
@@ -38,12 +41,15 @@
                     <div id="NameLoginForm">
                         <h2>Đăng kí</h2>
                     </div>
-                    <div id="InputLogin">
-                        <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập">
-                        <div id="LoginButton" href="">
-                            <a href="">TIẾP THEO</a> 
-                        </div>
-                    </div>
+                    <form id="InputLogin" name="formDangKi" onsubmit="return ValidateDangKy()">
+                        <input type="text" name="EmailDK" placeholder="Email/Số điện thoại/Tên đăng nhập">
+                        <div id="warningDK"></div>
+                        <input type="password" name="pass1" id="" placeholder="Nhập mật khẩu">
+                        <div id="warnPass1"></div>
+                        <input type="password" name="pass2" id="" placeholder="Nhập lại mật khẩu">
+                        <div id="warnPass2"></div>
+                        <input id="LoginButton" type="submit" value="TIẾP THEO">
+                    </form>
                     <div id="lineXam">
                         <p>HOẶC</p>
                     </div>

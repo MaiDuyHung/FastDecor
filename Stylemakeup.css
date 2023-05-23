@@ -707,6 +707,13 @@
     font-weight: 600;
     font-size: 18px;
 }
+.gioithieu p{
+    padding-bottom: 20px;
+}
+.gioithieu svg{
+    color:rgb(255, 87, 51);
+
+}
 #borderiframe{
     width: 360px;
     height: 130px;
@@ -725,7 +732,7 @@
     font-weight: 600;
 }
 #enter{
-    width: 360px;
+    width: 80%;
     height: 38px;
     padding-left: 15px;
     margin-top: 15px;
@@ -735,10 +742,43 @@
     background-color: rgb(191,180,178);
     border:none;
 }
+
+#enter:focus{
+    outline: none;
+}
+
+#FormIPFooter{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+#submitEFooter{
+    width: 20%;
+    height: 38px;
+    margin-top:15px;
+    padding: 4px;
+    border: 1px;
+    background-color: rgb(1,29,24);
+    color: rgb(226, 183, 64);
+}
+#submitEFooter:hover{
+    background-color: rgb(226, 183, 64);
+    color: rgb(2, 45, 38);
+    transition: all 0.3s ease-in;
+}
 #Connect{
     margin-top: 20px;
 }
-
+#iconContact{
+    transform: translateY(-50%);
+}
+.iconContactUs{
+    width: 30px;
+    height:30px;
+    padding: 5px;
+    border: 2px rgb(202,162,75) solid;
+    margin: 0px 5px;
+}
 #designby{
     display: flex;
     align-items: center;
@@ -746,8 +786,9 @@
     font-size: 13px;
     font-family: "Lexend", sans-serif;
     padding: 8px 8px 8px 8px;
-    font-weight: 600;
-    color: rgb(51, 51, 51);
+    font-weight: 500;
+    color: rgb(226, 183, 64);
+    background-color: rgb(1,29,24);
 }
 #imglogo{
     background-image: url(ImgTrangChu/logoNhanhdecor.JPG);

@@ -28,3 +28,11 @@ showSlides(slideIndex = 0);
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
+// ALERT QR khi đăng nhập
+
+function alertQR(){
+    alert("Chức năng này vẫn đang trong giai đoạn thử nghiệm, chúng tôi sẽ cố gắng cập nhật sớm nhất. Vui lòng quay lại sau!");    
+}
+
+
